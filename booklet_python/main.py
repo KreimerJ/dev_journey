@@ -5,8 +5,8 @@ def get_book_text():
 
 
 def main():
-    lines = get_book_text()
-    print(lines)
+    content = get_book_text()
+    print(content)
 
 
 if __name__ == "__main__":
