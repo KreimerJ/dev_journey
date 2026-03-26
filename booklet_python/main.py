@@ -4,7 +4,7 @@ def get_book_text():
     return file_contents
 
 
-def words_counter(text: str) -> int:
+def count_words(text: str) -> int:
     words = text.split()
     counter = len(words)
 
@@ -13,7 +13,7 @@ def words_counter(text: str) -> int:
 
 def main():
     content = get_book_text()
-    words_number = words_counter(content)
+    words_number = count_words(content)
     print(f"Found {words_number} total words")
 
 
