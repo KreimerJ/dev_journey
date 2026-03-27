@@ -4,16 +4,13 @@ def count_words(text: str) -> int:
     return counter
 
 
-def count_chars(txt: str) -> dict:
-    txt = txt.lower()
+def count_chars(text: str) -> dict:
+    text = text.lower()
     chars = {}
-    for char in txt:
+    for char in text:
         if char not in chars:
-            chars[char] = [char]
+            chars[char] = 1
         else:
-            chars[char].append(char)
-
-    for char in chars:
-        chars[char] = len(chars[char])
+            chars[char] = chars[char] + 1
 
     return chars
